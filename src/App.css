@@ -37,6 +37,7 @@
   }
 }
 
+/* Estilos generales de la aplicación */
 .App {
   text-align: center;
   display: flex;
@@ -46,17 +47,61 @@
   min-height: 100vh;
   background: linear-gradient(to right, #ffe6e6, #ffc6c6);
   color: #5a5a5a;
+  font-size: calc(1rem + 2vmin); /* Ajuste de tamaño de fuente relativo */
 }
 
+/* Estilos para el contenedor de las imágenes en las esquinas */
+.corner-image {
+  position: absolute;
+  width: 15vw; /* Ancho relativo para dispositivos móviles */
+  height: 15vw; /* Altura relativa para dispositivos móviles */
+  max-width: 100px; /* Máximo ancho para asegurar tamaño mínimo */
+  max-height: 100px; /* Máximo alto para asegurar tamaño mínimo */
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+  overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+   object-fit: cover; /* Ajusta la imagen para cubrir el contenedor, recortando si es necesario */
+}
+
+.corner-image img {
+  width: 100%; /* Ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor, recortando si es necesario */
+}
+
+/* Estilos específicos para cada esquina */
+.top-left {
+  top: 3vh; /* Ajuste relativo para dispositivos móviles */
+  left: 3vh; /* Ajuste relativo para dispositivos móviles */
+  height: 12vh; /* Altura relativa para dispositivos móviles */
+}
+
+.top-right {
+  top: 3vh; /* Ajuste relativo para dispositivos móviles */
+  right: 3vh; /* Ajuste relativo para dispositivos móviles */
+}
+
+.bottom-left {
+  bottom: 3vh; /* Ajuste relativo para dispositivos móviles */
+  left: 3vh; /* Ajuste relativo para dispositivos móviles */
+  height: 12vh; /* Altura relativa para dispositivos móviles */
+}
+
+.bottom-right {
+  bottom: 3vh; /* Ajuste relativo para dispositivos móviles */
+  right: 3vh; /* Ajuste relativo para dispositivos móviles */
+}
+
+/* Estilos para el contenido principal */
 .header-wrapper {
   margin-bottom: 2rem;
+  position: relative; /* Agregado para alinear correctamente las esquinas */
 }
 
 .header-content {
   margin-bottom: 2rem;
+  position: relative; /* Agregado para alinear correctamente las esquinas */
 }
-
-
 
 .header-wrapper h1::before,
 .header-wrapper h1::after {
@@ -68,11 +113,11 @@
 }
 
 .header-wrapper h1::before {
-  left: -4rem;
+  left: -4rem; /* Ajuste relativo para dispositivos móviles */
 }
 
 .header-wrapper h1::after {
-  right: -4rem;
+  right: -4rem; /* Ajuste relativo para dispositivos móviles */
 }
 
 .header-wrapper h2 {
@@ -82,95 +127,69 @@
 }
 
 .is-christmas-wrapper,
-/* Estilos para la sección del contador */
 .countdown-wrapper {
-  background: #fce4ec; /* Color de fondo rosa suave */
-  border: 2px solid #f48fb1; /* Borde rosa más oscuro */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  margin-bottom: 20px; /* Margen inferior */
+  background: #fce4ec;
+  border: 2px solid #f48fb1;
+  border-radius: 1rem; /* Borde redondeado relativo */
+  padding: 2rem; /* Espaciado interno relativo */
+  margin-bottom: 2rem; /* Margen inferior relativo */
 }
 
 .countdown-wrapper span {
-  font-size: 2.5rem; /* Tamaño de fuente más grande */
-  color: #c2185b; /* Color de texto rosado */
-  font-weight: bold; /* Texto en negrita */
+  font-size: 2.5rem;
+  color: #c2185b;
+  font-weight: bold;
 }
 
-/* Estilos para el botón */
 button {
-  background: #f48fb1; /* Color de fondo rosa */
-  border: none; /* Sin borde */
-  border-radius: 25px; /* Bordes redondeados */
-  padding: 15px 30px; /* Ajuste del padding */
-  font-size: 1.2rem; /* Tamaño de fuente */
-  color: white; /* Color de texto blanco */
-  font-weight: bold; /* Texto en negrita */
-  cursor: pointer; /* Cambio de cursor */
-  transition: background 0.3s ease; /* Transición suave */
+  background: #f48fb1;
+  border: none;
+  border-radius: 2rem; /* Borde redondeado relativo */
+  padding: 1.5rem 3rem; /* Ajuste de padding relativo */
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background: #e91e63; /* Color de fondo rosa más oscuro al pasar el ratón */
+  background: #e91e63;
 }
 
 /* Estilos adicionales para decoración romántica */
 .App {
-  background: linear-gradient(to right, #ffe6e6, #ffc6c6); /* Degradado suave */
-  color: #5a5a5a; /* Color de texto oscuro */
+  background: linear-gradient(to right, #ffe6e6, #ffc6c6);
+  color: #5a5a5a;
 }
 
 .header-wrapper h1 {
-  font-size: 3rem; /* Tamaño de fuente más grande */
-  color: #c21848; /* Color de texto rosado */
-  margin-bottom: 1rem; /* Margen inferior */
-  position: relative; /* Posición relativa */
-  text-align: center; /* Alineación centrada */
+  font-size: 3rem;
+  color: #c21848;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
 }
-
 
 .header-wrapper h2 {
-  font-size: 1.8rem; /* Tamaño de fuente */
-  color: #f48fb1; /* Color de texto rosado */
-  margin: 0; /* Sin margen */
-  text-align: center; /* Alineación centrada */
+  font-size: 1.8rem;
+  color: #f48fb1;
+  margin: 0;
+  text-align: center;
 }
 
-.corner-image {
-  position: absolute; /* Posicionamiento absoluto para colocar las imágenes en las esquinas */
-  width: 100px; /* Ancho deseado para las imágenes */
-  height: 100px; /* Altura deseada para las imágenes */
-  border-radius: 50%; /* Hace que las imágenes sean circulares */
-  overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .corner-image {
+      width: 15vw; /* Ajuste de tamaño relativo para dispositivos móviles */
+      height: 15vw; /* Ajuste de tamaño relativo para dispositivos móviles */
+      max-width: 100px; /* Máximo ancho para asegurar tamaño mínimo */
+      max-height: 100px; /* Máximo alto para asegurar tamaño mínimo */
+  }
+
+  .header-wrapper h1::before,
+  .header-wrapper h1::after {
+      display: none; /* Oculta los emojis en pantallas más pequeñas */
+  }
 }
 
-.corner-image img {
-  width: 100%; /* Ancho de la imagen al 100% del contenedor */
-  height: 100%; /* Altura de la imagen al 100% del contenedor */
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor, recortando si es necesario */
-}
-
-.top-left {
-  top: 30px;
-  left: 30px;
-  border-radius: 0%;
-  height: 120px;
-}
-
-.top-right {
-  top: 30px;
-  right: 30px;
-}
-
-.bottom-left {
-  bottom: 30px;
-  left: 30px;
-  border-radius: 0%;
-  height: 120px;
-}
-
-.bottom-right {
-  bottom: 30px;
-  right: 30px;
-}
