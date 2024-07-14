@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/contador-aniv/static/css/main.34ea9345.css",
-    "main.js": "/contador-aniv/static/js/main.edecc821.js",
+    "main.css": "/contador-aniv/static/css/main.27d4cdbe.css",
+    "main.js": "/contador-aniv/static/js/main.d1982ce9.js",
     "static/js/453.81d763df.chunk.js": "/contador-aniv/static/js/453.81d763df.chunk.js",
     "index.html": "/contador-aniv/index.html",
-    "main.34ea9345.css.map": "/contador-aniv/static/css/main.34ea9345.css.map",
-    "main.edecc821.js.map": "/contador-aniv/static/js/main.edecc821.js.map",
+    "main.27d4cdbe.css.map": "/contador-aniv/static/css/main.27d4cdbe.css.map",
+    "main.d1982ce9.js.map": "/contador-aniv/static/js/main.d1982ce9.js.map",
     "453.81d763df.chunk.js.map": "/contador-aniv/static/js/453.81d763df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34ea9345.css",
-    "static/js/main.edecc821.js"
+    "static/css/main.27d4cdbe.css",
+    "static/js/main.d1982ce9.js"
   ]
 }
