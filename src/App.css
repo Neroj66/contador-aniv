@@ -54,10 +54,10 @@
 /* Estilos para el contenedor de las imágenes en las esquinas */
 .corner-image {
   position: absolute;
-  width: 15vw; /* Ancho relativo para dispositivos móviles */
-  height: 15vw; /* Altura relativa para dispositivos móviles */
-  max-width: 100px; /* Máximo ancho para asegurar tamaño mínimo */
-  max-height: 100px; /* Máximo alto para asegurar tamaño mínimo */
+  width: 35vw; /* Ancho relativo para dispositivos móviles */
+  height: 35vw; /* Altura relativa para dispositivos móviles */
+  max-width: 15vw; /* Máximo ancho para asegurar tamaño mínimo */
+  max-height: 15vw; /* Máximo alto para asegurar tamaño mínimo */
   border-radius: 50%; /* Hace que las imágenes sean circulares */
   overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
@@ -74,7 +74,9 @@
 .top-left {
   top: 3vh; /* Ajuste relativo para dispositivos móviles */
   left: 3vh; /* Ajuste relativo para dispositivos móviles */
-  height: 12vh; /* Altura relativa para dispositivos móviles */
+  width: 25vh;
+  height: 25vh; /* Altura relativa para dispositivos móviles */
+  border-radius: 0%;
 }
 
 .top-right {
@@ -85,7 +87,9 @@
 .bottom-left {
   bottom: 3vh; /* Ajuste relativo para dispositivos móviles */
   left: 3vh; /* Ajuste relativo para dispositivos móviles */
-  height: 12vh; /* Altura relativa para dispositivos móviles */
+  width: 25vh;
+  height: 30vh;
+  border-radius: 0%;
 }
 
 .bottom-right {
