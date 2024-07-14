@@ -136,3 +136,41 @@ button:hover {
   text-align: center; /* Alineación centrada */
 }
 
+.corner-image {
+  position: absolute; /* Posicionamiento absoluto para colocar las imágenes en las esquinas */
+  width: 100px; /* Ancho deseado para las imágenes */
+  height: 100px; /* Altura deseada para las imágenes */
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+  overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.corner-image img {
+  width: 100%; /* Ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor, recortando si es necesario */
+}
+
+.top-left {
+  top: 30px;
+  left: 30px;
+  border-radius: 0%;
+  height: 120px;
+}
+
+.top-right {
+  top: 30px;
+  right: 30px;
+}
+
+.bottom-left {
+  bottom: 30px;
+  left: 30px;
+  border-radius: 0%;
+  height: 120px;
+}
+
+.bottom-right {
+  bottom: 30px;
+  right: 30px;
+}
