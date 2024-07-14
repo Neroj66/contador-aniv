@@ -36,3 +36,103 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffe6e6, #ffc6c6);
+  color: #5a5a5a;
+}
+
+.header-wrapper {
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  margin-bottom: 2rem;
+}
+
+
+
+.header-wrapper h1::before,
+.header-wrapper h1::after {
+  content: "🩵👑";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-wrapper h1::before {
+  left: -4rem;
+}
+
+.header-wrapper h1::after {
+  right: -4rem;
+}
+
+.header-wrapper h2 {
+  font-size: 1.5rem;
+  color: #e67a7a;
+  margin: 0;
+}
+
+.is-christmas-wrapper,
+/* Estilos para la sección del contador */
+.countdown-wrapper {
+  background: #fce4ec; /* Color de fondo rosa suave */
+  border: 2px solid #f48fb1; /* Borde rosa más oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.countdown-wrapper span {
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
+  color: #c2185b; /* Color de texto rosado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el botón */
+button {
+  background: #f48fb1; /* Color de fondo rosa */
+  border: none; /* Sin borde */
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 15px 30px; /* Ajuste del padding */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: white; /* Color de texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambio de cursor */
+  transition: background 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+  background: #e91e63; /* Color de fondo rosa más oscuro al pasar el ratón */
+}
+
+/* Estilos adicionales para decoración romántica */
+.App {
+  background: linear-gradient(to right, #ffe6e6, #ffc6c6); /* Degradado suave */
+  color: #5a5a5a; /* Color de texto oscuro */
+}
+
+.header-wrapper h1 {
+  font-size: 3rem; /* Tamaño de fuente más grande */
+  color: #c21848; /* Color de texto rosado */
+  margin-bottom: 1rem; /* Margen inferior */
+  position: relative; /* Posición relativa */
+  text-align: center; /* Alineación centrada */
+}
+
+
+.header-wrapper h2 {
+  font-size: 1.8rem; /* Tamaño de fuente */
+  color: #f48fb1; /* Color de texto rosado */
+  margin: 0; /* Sin margen */
+  text-align: center; /* Alineación centrada */
+}
+
