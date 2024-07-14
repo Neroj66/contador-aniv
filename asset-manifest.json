@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/contador-aniv/static/css/main.08961e58.css",
+    "main.css": "/contador-aniv/static/css/main.5179b194.css",
     "main.js": "/contador-aniv/static/js/main.4368bb27.js",
     "static/js/453.81d763df.chunk.js": "/contador-aniv/static/js/453.81d763df.chunk.js",
     "static/media/puls.png": "/contador-aniv/static/media/puls.1349074a55469b0b901f.png",
@@ -8,12 +8,12 @@
     "static/media/cinna.png": "/contador-aniv/static/media/cinna.0c370d52c2517acdbe93.png",
     "static/media/k-s.jpg": "/contador-aniv/static/media/k-s.43480d305dc5c7147028.jpg",
     "index.html": "/contador-aniv/index.html",
-    "main.08961e58.css.map": "/contador-aniv/static/css/main.08961e58.css.map",
+    "main.5179b194.css.map": "/contador-aniv/static/css/main.5179b194.css.map",
     "main.4368bb27.js.map": "/contador-aniv/static/js/main.4368bb27.js.map",
     "453.81d763df.chunk.js.map": "/contador-aniv/static/js/453.81d763df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08961e58.css",
+    "static/css/main.5179b194.css",
     "static/js/main.4368bb27.js"
   ]
 }
