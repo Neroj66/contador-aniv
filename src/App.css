@@ -48,6 +48,7 @@
   background: linear-gradient(to right, #ffe6e6, #ffc6c6);
   color: #5a5a5a;
   font-size: calc(1rem + 2vmin); /* Ajuste de tamaño de fuente relativo */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
 /* Estilos para el contenedor de las imágenes en las esquinas */
@@ -185,7 +186,11 @@ button:hover {
       height: 15vw; /* Ajuste de tamaño relativo para dispositivos móviles */
       max-width: 100px; /* Máximo ancho para asegurar tamaño mínimo */
       max-height: 100px; /* Máximo alto para asegurar tamaño mínimo */
+      
   }
+  .App {
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el contenedor */
+}
 
   .header-wrapper h1::before,
   .header-wrapper h1::after {
